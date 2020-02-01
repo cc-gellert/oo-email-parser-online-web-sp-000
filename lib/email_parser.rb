@@ -5,6 +5,10 @@
 
 class EmailAddressParser 
   def initialize(str)
+    parse(str)
+  end 
+  
+  def parse(str)
     results = [] 
     toCheck = str.split(/[ ,] {1,}/)
     toCheck.each do |i| 
