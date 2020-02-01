@@ -4,9 +4,6 @@
 # or whitespace (' ').
 
 class EmailAddressParser 
-  def initialize(str)
-    parse(str)
-  end 
   
   def parse(str)
     results = [] 
