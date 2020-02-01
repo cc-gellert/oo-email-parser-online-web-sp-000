@@ -3,6 +3,20 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 
-class EmailParser 
-  
+class EmailAddressParser 
+  def initialize(str)
+    results = [] 
+    toCheck = str.split(", ")
+    toCheck.each do |i| 
+      if(!results.include?(i))
+        results << i 
+      end 
+    end 
+    results 
+  end 
+end 
+
+#check for duplicates 
+#separate based on space or , 
+#should return an array of emails 
 end 
