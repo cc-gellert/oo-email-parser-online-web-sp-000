@@ -19,4 +19,3 @@ end
 #check for duplicates 
 #separate based on space or , 
 #should return an array of emails 
-end 
