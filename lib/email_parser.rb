@@ -6,7 +6,7 @@
 class EmailAddressParser 
   def initialize(str)
     results = [] 
-    toCheck = str.split(/ ,/)
+    toCheck = str.split(/ , {1,}/)
     toCheck.each do |i| 
       if(!results.include?(i))
         results << i 
